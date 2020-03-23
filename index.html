@@ -29,6 +29,7 @@
                     name="amount"
                     id="amount"
                     placeholder="Loan Amount"
+                    step="0.01"
                   />
                 </div>
               </div>
@@ -43,6 +44,7 @@
                     name="interest"
                     id="interest"
                     placeholder="Interest"
+                    step="0.01"
                   />
                 </div>
               </div>
@@ -60,6 +62,7 @@
                   type="submit"
                   value="Calculate"
                   class="btn btn-dark btn-block"
+                  id="submit"
                 />
               </div>
             </form>
@@ -75,8 +78,8 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text">Monthly Payment</span>
                   </div>
-                  <input
-                    type="number"
+                                    <input
+                    type="text"
                     class="form-control"
                     name="monthly"
                     id="monthly-payment"
@@ -90,7 +93,7 @@
                     <span class="input-group-text">Total Payment</span>
                   </div>
                   <input
-                    type="number"
+                    type="text"
                     class="form-control"
                     name="total"
                     id="total-payment"
